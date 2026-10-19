@@ -1,5 +1,6 @@
 import Intro from "./Intro";
 import Stats from "./Stats";
+import Contribute from "./Contribute";
  
 function Hero({
   stars,
@@ -41,6 +42,7 @@ onReset,}) {
         </button>
       </div>
       <Stats stars={stars} downloads={downloads} issues={issues} />
+      <Contribute issues={issues} />
     </>
   );
 }
